@@ -1,37 +1,38 @@
-HELP.md
-target/
-.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+# Gradle
+.gradle/
+build/
+**/build/
 
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
+# Keep Gradle wrapper files in every service
+!**/gradle/wrapper/gradle-wrapper.jar
 
-### IntelliJ IDEA ###
-.idea
+# IntelliJ IDEA
+.idea/
 *.iws
 *.iml
 *.ipr
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
+# Eclipse / STS
+.classpath
+.factorypath
+.project
+.settings/
+.apt_generated
+.springBeans
+.sts4-cache
 
-### VS Code ###
+# VS Code
 .vscode/
 
-### Logs files ###
+# Logs
 logs/
 *.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
