@@ -1,0 +1,9 @@
+@'
+.gradle/
+build/
+logs/
+*.log
+.idea/
+*.iml
+.git/
+'@ | Set-Content services/inventory-service/.dockerignore
